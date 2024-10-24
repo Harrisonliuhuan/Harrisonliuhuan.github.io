@@ -40,6 +40,7 @@ cd personal-website
 4. Install missing gems
 ```
 bundle install
+bundle add webrick 
 ```
 5. Build the site and make it available on a local server
 ```
@@ -226,3 +227,49 @@ You also have the option to add on to and extend Primer's styles by adding custo
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+
+My Mac:
+
+export GEM_HOME="$HOME/.gem"
+gem install jekyll bundler
+gem install rouge -v 3.30.0
+gem install bundler -v 2.4.22
+bundler -v
+gem update --system 3.2.3
+
+install version manage
+preparation:
+rvm help
+rbenv help
+asdf --help
+frum version
+uname -m
+echo $0
+
+installation
+sudo vim /etc/hosts
+** 199.232.28.133 raw.githubusercontent.com **
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+rm /Users/huan/Library/Caches/Homebrew/portable-ruby-3.1.4.arm64_big_sur.bottle.tar.gz
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+source /Users/huan/.zprofile
+brew install chruby ruby-install
+ruby-install ruby
+echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
+echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
+echo "chruby ruby-3.3.0" >> ~/.zshrc
+source ~/.zshrc
+
+ruby -v
+gem -v
+brew config
+gem install jekyll bundler
+cd personal-website
+bundle install
+
+bundle clean --force
+bundle update
+jekyll serve
+bundle exec jekyll serve
